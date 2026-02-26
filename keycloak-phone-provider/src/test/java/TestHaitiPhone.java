@@ -1,6 +1,6 @@
-package cc.coopersoft.test;
-
-import com.google.i18n.phonenumbers.*;
+import com.google.i18n.phonenumbers.NumberParseException;
+import com.google.i18n.phonenumbers.PhoneNumberUtil;
+import com.google.i18n.phonenumbers.Phonenumber;
 
 public class TestHaitiPhone {
     public static void main(String[] args) {
