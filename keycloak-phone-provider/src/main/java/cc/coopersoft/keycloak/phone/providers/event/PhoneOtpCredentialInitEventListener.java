@@ -73,9 +73,9 @@ public class PhoneOtpCredentialInitEventListener implements EventListenerProvide
             return;
         }
 
-        String phoneNumber = user.getFirstAttribute("phoneNumber");
+        String phoneNumber = user.getUsername();
         if (phoneNumber == null || phoneNumber.isBlank()) {
-            logger.debugf("User %s has no phoneNumber attribute, skipping phone-otp credential init", user.getId());
+            logger.debugf("User %s has no phone number, skipping phone-otp credential init", user.getId());
             return;
         }
 
